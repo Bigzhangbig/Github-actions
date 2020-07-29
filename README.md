@@ -3,6 +3,8 @@
 ## 今日签到状态
 ![贴吧签到](https://github.com/kuusei/Github-actions/workflows/%E8%B4%B4%E5%90%A7%E7%AD%BE%E5%88%B0/badge.svg?branch=master)
 ![B站直播签到](https://github.com/kuusei/Github-actions/workflows/B%E7%AB%99%E7%9B%B4%E6%92%AD%E7%AD%BE%E5%88%B0/badge.svg?branch=master)
+![京东签到](https://github.com/kuusei/Github-actions/workflows/%E4%BA%AC%E4%B8%9C%E7%AD%BE%E5%88%B0/badge.svg?branch=master)
+![steamcn(keylol)签到](https://github.com/kuusei/Github-actions/workflows/steamcn(keylol)%E7%AD%BE%E5%88%B0/badge.svg?branch=master)
 
 ## 开发计划
 - 部署各类常用的签到
@@ -67,7 +69,7 @@
 ## 签到触发
 - 使用点击star进行手动触发
 - 根据设置在不同时间自动触发
-    - 贴吧：1,2,3 点 05 分
+    - 贴吧：9,10,11 点 05 分
     - b站：6,12 点 00 分
     - 京东：16 点 00 分
     - keylol：6,12 点 00 分
