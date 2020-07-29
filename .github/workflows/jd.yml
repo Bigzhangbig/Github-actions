@@ -1,0 +1,33 @@
+name: '京东签到'
+
+on:
+  push:
+    branches:
+      - dev
+  schedule:
+    - cron: 0 16 * * *
+  watch:
+    types: started
+
+jobs:
+  jd_sign:
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
+
+    steps:
+      - name: '获取代码'
+        uses: actions/checkout@v2
+
+      - name: '初始化nodejs'
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+
+      - name: '安装依赖'
+        run: cd ./action & npm install
+
+      - name: '签到'
+      - run: node ./action/app.js
+        env:
+          JD_COOKIE: ${{ secrets.jd }}
+          PUSH_KEY: ${{ secrets.server_key }}
