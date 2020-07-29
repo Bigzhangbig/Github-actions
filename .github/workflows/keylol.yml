@@ -1,9 +1,6 @@
 name: 'steamcn(keylol)签到'
 
 on:
-  push:
-    branches:
-      - dev
   schedule:
     - cron: 0 6,12 * * *
   watch:
