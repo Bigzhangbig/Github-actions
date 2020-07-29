@@ -24,13 +24,11 @@ jobs:
           node-version: '12.x'
 
       - name: '安装依赖'
-        with:
-          path: ~/actions/jd
         run: npm install
 
       - name: '签到'
 
-        run: node ./actions/jd/jd.js
+        run: node ./actions/jd.js
         env:
           JD_COOKIE: ${{ secrets.jd }}
           PUSH_KEY: ${{ secrets.server }}
