@@ -30,4 +30,4 @@ jobs:
         run: node ./actions/jd.js
         env:
           JD_COOKIE: ${{ secrets.jd }}
-          PUSH_KEY: ${{ secrets.server_key }}
+          PUSH_KEY: ${{ secrets.server }}

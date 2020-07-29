@@ -8,7 +8,6 @@ const KEY = process.env.JD_COOKIE
 const serverJ = process.env.PUSH_KEY
 
 async function downFile () {
-    // const url = 'https://cdn.jsdelivr.net/gh/NobyDa/Script@master/JD-DailyBonus/JD_DailyBonus.js'
     const url = 'https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js'
     await download(url, './')
 }
