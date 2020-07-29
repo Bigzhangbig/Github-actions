@@ -27,7 +27,7 @@ jobs:
         run: cd ./action & npm install
 
       - name: '签到'
-        run: node ./action/app.js
+        run: node ./action/jd.js
         env:
           JD_COOKIE: ${{ secrets.jd }}
           PUSH_KEY: ${{ secrets.server_key }}
