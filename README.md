@@ -41,9 +41,27 @@
 - 需要在Secrets中设置签到参数
     - 参数：bilibili
     - 该值为需要签到的b站账号的COOKIE
-    - 获取方法：打开[bilibili-Info](https://api.live.bilibili.com/sign/GetSignInfo) 再按f12进入开发者模式, 选择network，再使用f5刷新
+    - 获取方法：打开[bilibili-Info](https://api.live.bilibili.com/sign/GetSignInfo) 再按`f12`进入开发者模式, 选择network，再使用f5刷新
      - 点击 GetSignInfo 即可找到 cookie
     ![fork](assets/bilibili.png)
+- 设置完变量后，点击star即可触发action
+
+#### 京东签到
+- 需要在Secrets中设置签到参数
+    - 参数：jd
+    - 该值为需要签到的京东账号的cookie值
+    - 该值需要抓包，开启抓包app, 登录 https://bean.m.jd.com 点击签到并且出现签到日历后, 返回抓包app搜索关键字 functionId=signBean 复制请求头Cookie
+- 可选：可以在Secrets设置server酱推送参数
+    - 参数：server
+    - 该值为server推送参数
+    - 在此处[server酱](http://sc.ftqq.com/3.version) 登录后绑定微信，即可看到key
+- 设置完变量后，点击star即可触发action
+
+#### steamcn（keylol）签到
+- 需要在Secrets中设置签到参数
+    - 参数：keylol
+    - 该值为需要签到的keylol账号的cookie值
+    - 登录keylol之后，点击`f12`, 在console处输入`copy(document.cookie)`即可复制cookie
 - 设置完变量后，点击star即可触发action
     
 ## 签到触发
@@ -51,3 +69,5 @@
 - 根据设置在不同时间自动触发
     - 贴吧：1,2,3 点 05 分
     - b站：6,12 点 00 分
+    - 京东：16 点 00 分
+    - keylol：6,12 点 00 分
